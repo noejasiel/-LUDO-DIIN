@@ -2,8 +2,7 @@ import React, {useState} from "react";
 import userIcon from "../assets/user.png";
 import Nav from "../components/Nav";
 import services from '../services/user';
-import axios from 'axios';
-import Notificacion from './Notificacion'
+import Notificacion from '../components/Notificacion'
 
 const Login = () => {
 
