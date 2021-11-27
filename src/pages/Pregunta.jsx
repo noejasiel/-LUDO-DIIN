@@ -1,5 +1,5 @@
 import React from 'react';
-import Nav3 from './Nav_vista3';
+import Nav3 from '../components/Nav_vista3';
 import backIcon from '../assets/back.svg'
 
 const Cursos = ()=>(
