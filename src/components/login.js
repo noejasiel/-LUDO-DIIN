@@ -12,12 +12,16 @@ const Login = () => {
             <h1 className="text-blue-900 mb-4 bol">Iniciar Sesion</h1>
             <form className="mt-1 ">
               <div className=" flex justify-center content-center items-center  flex-col ">
-                <label className="text-blue-900">Nombre o correo</label>
-                <input className="border-b-2 border-indigo-800 "></input>
+                <input
+                  className="border-b-2 border-indigo-800 placeholder-blue-900 text-center bg-indigo-50"
+                  placeholder="Correo o Usuario"
+                ></input>
               </div>
-              <div className=" flex justify-center content-center items-center flex-col mt-2 ">
-                <label className="text-blue-900">Contraseña</label>
-                <input className="border-b-2 border-indigo-800 "></input>
+              <div className=" flex justify-center content-center items-center flex-col mt-4 ">
+                <input
+                  className="border-b-2 border-indigo-800 placeholder-blue-900 text-center bg-indigo-50"
+                  placeholder="Contraseña"
+                ></input>
               </div>
               <div className=" flex justify-center content-center items-center flex-col mt-2 ">
                 <button className="mt-2 bg-blue-900 p-2 rounded-md text-indigo-50 pr-4 pl-4">
