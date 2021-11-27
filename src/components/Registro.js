@@ -1,24 +1,37 @@
-import React from "react";
-import user from "../assets/user.png";
+import React, { useState } from "react";
+import userIcon from "../assets/user.png";
 import Nav from "./Nav";
 const Registro = () =>{
+
+  const [user, setUser] = useState({nombre:'',apellido:'',genero:'',edad:'', pasword:''})
+
+  const handleChange = e =>{
+    setUser({...user, [e.target.name]: e.target.value})
+  }
+
     return (
         <div className="h-screen bg-gradient-to-r from-primary to-secondary">
         <Nav />
         <div className="w-full flex justify-center content-center items-center pt-20">
           <div className="w-1/3 border-2 h-3/5 bg-indigo-50 rounded-xl p-5">
             <div className="w-full flex justify-center  content-center items-center h-full flex-col">
-              <img src={user} width="60" height="50" className="mb-4" alt="img-user" />
+              <img src={userIcon} width="60" height="50" className="mb-4" alt="img-user" />
               <h1 className="text-blue-900 mb-4 font-bold text-2xl">Registrarse</h1>
               <form className="mt-1 ">
                 <div className=" flex justify-center content-center items-center  flex-col ">
                   <input
+                    onChange={handleChange}
+                    name="nombre"
+                    value={user.nombre}
                     className="border-b-2 border-indigo-800 placeholder-blue-900 bg-indigo-50"
                     placeholder="Nombre"
                   ></input>
                 </div>
                 <div className=" flex justify-center content-center items-center flex-col mt-4 ">
                   <input
+                    onChange={handleChange}
+                    name="apellido"
+                    value={user.apellido}
                     className="border-b-2 border-indigo-800 placeholder-blue-900 bg-indigo-50"
                     placeholder="Apellido"
                   ></input>
@@ -28,7 +41,9 @@ const Registro = () =>{
                     <p className=" flex justify-center content-center items-center flex-col mt-4 text-blue-900" >Genero:
                         <div>
                             <select
-                                name="menu"
+                              onChange={handleChange}
+                              value={user.genero}
+                                name="genero"
                                 className="border-b-2 border-indigo-800 placeholder-blue-900 bg-indigo-50"
                             >
                                 <option value="0">...</option>
@@ -40,13 +55,19 @@ const Registro = () =>{
                     </p>
                     <p className=" flex justify-center content-center items-center flex-col mt-4 text-blue-900">Edad:
                         <div>
-                            <input type="number" min="18" max="99" className="border-b-2 border-indigo-800 placeholder-blue-900 bg-indigo-50"/>
+                            <input
+                              onChange={handleChange}
+                              name="edad"
+                              value={user.edad} type="number" min="18" max="99" className="border-b-2 border-indigo-800 placeholder-blue-900 bg-indigo-50"/>
                         </div>
                     </p>
                 </div>    
                 <div className=" flex justify-center content-center items-center flex-col mt-4 ">
                   <input
+                    onChange={handleChange}
+                    value={user.pasword}
                     type="password"
+                    name="password"
                     className="border-b-2 border-indigo-800 placeholder-blue-900 bg-indigo-50"
                     placeholder="contraseña"
                   ></input>
