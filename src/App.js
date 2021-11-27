@@ -1,8 +1,8 @@
-import Registro from "./components/Registro";
+import Pregunta from "./components/Pregunta";
 function App() {
   return (
     <div>
-      <Registro />
+      <Pregunta />
     </div>
   );
 }
