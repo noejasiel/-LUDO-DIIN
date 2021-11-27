@@ -1,6 +1,6 @@
 import React from "react";
-import Nav2 from "./Nav_vista2";
-import Card from "./Card.jsx";
+import Nav2 from "../components/Nav_vista2";
+import Card from "../components/Card.jsx";
 
 const Cursos = () => {
   return (
