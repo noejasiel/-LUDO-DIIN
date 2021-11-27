@@ -1,10 +1,11 @@
 import React from "react";
 import user from "../assets/user.png";
 import Nav from "../components/Nav";
+import Nav2 from "../components/Nav_vista2";
 const Login = () => {
   return (
     <div className="bg-blue-900">
-      <Nav />
+      <Nav2 />
       <div className="w-full flex justify-center h-screen content-center items-center ">
         <div className="w-1/3 border-2 h-3/5 bg-indigo-50 rounded-xl">
           <div className="w-full flex justify-center  content-center items-center h-full flex-col">
