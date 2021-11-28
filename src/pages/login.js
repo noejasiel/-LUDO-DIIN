@@ -3,9 +3,11 @@ import userIcon from "../assets/user.png";
 import Nav from "../components/Nav";
 import services from '../services/user';
 import Notificacion from '../components/Notificacion'
+import auth from "../routes/auth";
+import {useHistory} from 'react-router-dom';
 
 const Login = () => {
-
+  let history = useHistory();
   const [user, setUser] = useState({email:'', password: ''})
   const [error, setError] = useState(false)
 
@@ -17,9 +19,11 @@ const Login = () => {
     e.preventDefault();
     try {
       const res = await services.login(user)
-      window.localStorage.setItem('user', JSON.stringify(res))
       setUser({...user, email:'', password:''})
-      window.location.href = '/cursos'
+      auth.login(() => {
+        window.localStorage.setItem('user', JSON.stringify(res))
+        history.push('/ludodiin/cursos');
+      })
     } catch (error) {
         setError(`Contrasena o email incorrecto`)
         setTimeout(()=> {
@@ -27,7 +31,7 @@ const Login = () => {
         },5000)
     }
   }
-
+  
   return (
     <div className="h-screen bg-gradient-to-r from-primary to-secondary">
       <Nav/>

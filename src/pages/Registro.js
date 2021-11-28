@@ -3,9 +3,11 @@ import userIcon from "../assets/user.png";
 import Nav from "../components/Nav";
 import services from '../services/user';
 import Notificacion from "../components/Notificacion";
+import auth from '../routes/auth';
+import {useHistory} from 'react-router-dom';
 
 const Registro = () =>{
-
+  let history = useHistory()
   const [user, setUser] = useState({nombre:'',apellido:'',genero:'',edad:'', password:'',email:''})
   const [error, setError] = useState(null)
 
@@ -18,9 +20,11 @@ const Registro = () =>{
     console.log(user);
     try {
       const data = await services.signup(user)
-      window.localStorage.setItem('user', JSON.stringify(data))
       setUser({...user, email:'', password:'', apellido:'',genero:'',edad:'',nombre:''})
-      window.location.href = '/cursos'
+      auth.login(() => {
+        window.localStorage.setItem('user', JSON.stringify(data))
+        history.push('/ludodiin/cursos');
+      })
     } catch (error) {
       setError(`Campos obligatorios`)
         setTimeout(()=> {
