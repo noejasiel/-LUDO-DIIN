@@ -16,35 +16,35 @@ const Cursos = () => {
       titulo: "2. Acercamiento a nociones de Inclusión Laboral en Mexico",
       descripcion:
         "Explicar las nociones teóricas de la inclusión laboral en Mexico para un acercamiento al buen trato de personas con discapacidad.",
-      img: "bg-img-card1",
+      img: "bg-img-card2",
     },
     {
       id: 2,
       titulo: "3. Reclutamiento y selección inclusiva",
       descripcion:
         "Comprender el proceso de reclutamiento y selección inclusivo adecuado en la empresa.",
-      img: "bg-img-card1",
+      img: "bg-img-card7",
     },
     {
       id: 0,
       titulo: "1. Conociendo la discapacidad",
       descripcion:
         "Conocer los conceptos básicos sobre la discapacidad y sus tipos.",
-      img: "bg-img-card1",
+      img: "bg-img-card4",
     },
     {
       id: 1,
       titulo: "2. Acercamiento a nociones de Inclusión Laboral en Mexico",
       descripcion:
         "Explicar las nociones teóricas de la inclusión laboral en Mexico para un acercamiento al buen trato de personas con discapacidad.",
-      img: "bg-img-card1",
+      img: "bg-img-card5",
     },
     {
       id: 2,
       titulo: "3. Reclutamiento y selección inclusiva",
       descripcion:
         "Comprender el proceso de reclutamiento y selección inclusivo adecuado en la empresa.",
-      img: "bg-img-card1",
+      img: "bg-img-card6",
     },
   ];
   return (

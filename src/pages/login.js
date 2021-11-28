@@ -4,12 +4,20 @@ import Nav from "../components/Nav";
 const Login = () => {
   return (
     <div className="h-screen bg-gradient-to-r from-primary to-secondary">
-      <Nav/>
+      <Nav />
       <div className="w-full flex justify-center pt-20 content-center items-center ">
         <div className="w-1/3 border-2 h-3/5 bg-indigo-50 py-12 rounded-xl">
           <div className="w-full flex justify-center  content-center items-center h-full flex-col">
-            <img src={user} width="60" height="50" className="mb-4" alt="user-icon"/>
-            <h1 className="text-blue-900 mb-4 font-bold text-2xl">Iniciar Sesion</h1>
+            <img
+              src={user}
+              width="60"
+              height="50"
+              className="mb-4"
+              alt="user-icon"
+            />
+            <h1 className="text-blue-900 mb-4 font-bold text-2xl">
+              Iniciar Sesion
+            </h1>
             <form className="mt-1 ">
               <div className=" flex justify-center content-center items-center  flex-col ">
                 <input
@@ -28,7 +36,7 @@ const Login = () => {
                   Iniciar Sesion
                 </button>
               </div>
-            </form> 
+            </form>
           </div>
         </div>
       </div>
