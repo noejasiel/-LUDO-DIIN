@@ -1,59 +1,44 @@
 {
-  "name": "ludo_diin",
-  "version": "0.1.0",
-  "private": true,
+  "name": "newproyect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "proxy": "http://localhost:3003",
-  "dependencies": {
-    "@babel/preset-env": "^7.16.4",
-    "@babel/preset-react": "^7.16.0",
-    "@craco/craco": "^6.4.2",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "start": "webpack serve --mode=development --config webpack.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.14.8",
+    "@babel/node": "^7.14.9",
+    "@babel/preset-env": "^7.14.8",
+    "@babel/preset-react": "^7.14.5",
     "@svgr/webpack": "^5.5.0",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "axios": "^0.24.0",
-    "babel-loader": "^8.2.3",
-    "exports-loader": "^3.1.0",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.5.1",
+    "postcss-cli": "^9.0.2",
+    "postcss-loader": "^6.2.1",
+    "react-svg-loader": "^3.0.3",
+    "style-loader": "^3.3.1",
+    "tailwindcss": "^2.2.19",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.47.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "axios": "^0.21.1",
     "file-loader": "^6.2.0",
+    "jsx-loader": "^0.13.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
-    "url-loader": "^4.1.1",
-    "web-vitals": "^1.0.1"
-  },
-  "scripts": {
-    "start": "craco start",
-    "build": "webpack",
-    "test": "craco test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "autoprefixer": "^9.8.8",
-    "css-loader": "^6.5.1",
-    "postcss": "^7.0.39",
-    "style-loader": "^3.3.1",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
-    "val-loader": "^4.0.0",
-    "webpack": "^5.37.1",
-    "webpack-cli": "^4.9.1"
+    "svg-url-loader": "^7.1.1"
   }
 }

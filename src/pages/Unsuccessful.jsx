@@ -3,7 +3,7 @@ import unsuccessful from "../assets/unsuccelful.png";
 
 const Unsuccessful = () => (
   <div className="w-full h-screen flex justify-center items-center flex-col bg-blue-900">
-    <img src={unsuccessful} width="400" />
+    <img src={unsuccessful} width="400" alt="icon" />
     <h1 className="mt-5 text-white">No aprobaste el curso</h1>
     <h1 className="text-white">“Conociendo la discapacidad”</h1>
     <h1 className="text-white ">6/10</h1>

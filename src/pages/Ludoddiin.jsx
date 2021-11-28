@@ -5,13 +5,13 @@ import Cursos from './Cursos';
 import Curso from './Curso';
 
 const Ludodiin = ()=>{
-    let {url} = useRouteMatch()
+    let {path} = useRouteMatch()
+    console.log(path);
     return(
         <div className="dashboard-section">
             <Switch>
-                <PrivateRouter exact path={`${url}/cursos`} component={Cursos}/>
-                <PrivateRouter path={`${url}/cursos/:id`} component={Curso}/>
-                {/* <PrivateRouter path={`${url}/perfil`} component={Descanso}/> */}
+                <PrivateRouter exact path={`${path}/cursos`} component={Cursos}/>
+                <PrivateRouter path={`${path}/cursos/:id`} component={Curso}/>
             </Switch>
         </div>
     )
