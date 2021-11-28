@@ -13,7 +13,7 @@ const Home = () => {
         <div className="w-full flex justify-center items-center ">
           <div className=" w-1/2 bg-indigo-900 bg-opacity-75 rounded-2xl pb-9 relative">
             <h1 className="text-center mt-4 text-white text-4xl mb-12">
-              Ludo Diin
+              LUDO DINN
             </h1>
             <p className="text-white text-center w-4/5 m-auto">
               plataforma web donde existe una variedad de herramientas para

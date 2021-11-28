@@ -1,10 +1,10 @@
 import React from "react";
-import imgLgbt from "../assets/lgbti_Home.png";
+import perrito from "../assets/perrito.png";
 
 const Somos = () => {
   return (
-    <div className="w-full flex justify-center items-center  p-6 bg-red-600">
-      <img src={imgLgbt} />
+    <div className="w-full flex justify-center items-center  p-6 bg-blue-800">
+      <img src={perrito} />
       <div className="w-2/4  mt-10 ">
         <h1 className="text-center text-white">¿Quiénes somos? </h1>
         <p className="w-3/4 text-center m-auto text-white ">
