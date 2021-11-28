@@ -34,7 +34,7 @@ const Login = () => {
   
   return (
     <div className="h-screen bg-gradient-to-r from-primary to-secondary">
-      <Nav/>
+      <Nav />
       <div className="w-full flex justify-center pt-20 content-center items-center ">
         <div className="w-1/3 border-2 h-3/5 bg-indigo-50 py-12 rounded-xl">
           <div className="w-full flex justify-center  content-center items-center h-full flex-col">
@@ -67,7 +67,7 @@ const Login = () => {
                   Iniciar Sesion
                 </button>
               </div>
-            </form> 
+            </form>
           </div>
         </div>
       </div>
